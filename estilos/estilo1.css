@@ -1,0 +1,261 @@
+@import url('https://fonts.googleapis.com/css2?family=Almendra&display=swap');
+header{
+    background: rgba(147, 124, 142, 0.1);
+    backdrop-filter: blur(5px);
+    border: none;
+    width: 100%;
+    box-shadow: inset  -40px 0px 40px rgba(0, 0, 0, 0.8);
+}
+
+h1{
+    font-size: 45px;
+    color:  #CDB4C6;
+    font-weight: 500;
+    margin-top: 0px ;
+    margin-left: 0px;
+    margin-bottom: auto;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.8), inset 0px 0px 20px 20px rgba(0, 0, 0, 0.8);
+}
+
+body{
+    font-family: "Almendra", serif;
+    background: radial-gradient(circle, #2b1d26 30%, #180f15 100%);
+    position: relative;
+    min-height: 100vh; 
+    display: flex;
+    flex-direction: column;
+
+    margin: 0;
+}
+
+.estiloespecial{
+    color:  #6B2127;
+    font-size: 20px;
+    width: 100%;
+    margin-left: auto;
+    margin-bottom: auto;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0px;
+}
+
+.estiloespecial2{
+    color:  #CBB3C4;
+    font-size: 16px;
+    width: 700px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.estiloespecial3{
+    color:  #92818D;
+    font-size: 16px;
+    width: 700px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/*INDEX*/
+#contenedorimg{
+    margin-top: 60px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background: rgba(147, 124, 142, 0.1);
+    backdrop-filter: blur(5px);
+    position: relative;
+    border: none;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.8), inset 0px 0px 30px 20px rgba(0, 0, 0, 0.8);
+    padding: 50px 46px;
+    border-radius: 12px;
+}
+
+#infografia{
+    margin: 0 0 0 10px;
+    width: 1150px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.8);
+}
+/*INDEX*/
+
+footer{
+    margin-top: auto;
+    width: 100%;
+    background-color: #2b1d26;
+    box-shadow: inset 0px 0px 30px 20px rgba(0, 0, 0, 0.8);
+    padding: 10px 0px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+a {
+    color: #CBB3C4;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.almendra-regular {
+  font-family: "Almendra", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+nav {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 100%;
+    gap: 0;
+    padding-inline-start: 0;
+}
+
+li {
+    flex-grow: 1;
+    margin: 0;
+    text-align: center;
+}
+
+ul li:last-child {
+    border-right: none; /* Elimina el borde derecho del último elemento */
+}
+
+.menu-principal ul {
+    padding: 0;
+    margin: 0;
+}
+
+.menu-principal li {
+    flex-grow: 1;
+}
+
+.menu-principal a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 0px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 200;
+    background-color: #180f15;
+    transition: all 0.3s ease;
+    flex: 1;
+    text-align: center;
+    box-shadow: 0px -10px 10px rgba(0, 0, 0, 0.8), inset 0px -5px 10px rgba(107, 33, 39, 0.4);
+}
+
+.menu-principal a::before, .menu-principal a::after {
+    content: "✦";
+    color: #6B2127;
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.menu-principal a:hover::before,
+.menu-principal a:hover::after {
+    color: #E6D5E0;
+    text-shadow: 0px 0px 5px #E6D5E0
+}
+
+.menu-principal a:hover {
+    background-color: #6B2127;
+    color: #E6D5E0;
+    text-shadow: 0px 0px 5px #E6D5E0
+}
+
+.menu-principal a.activo {
+    text-shadow: 0px 0px 5px #E6D5E0
+}
+
+
+
+/*INTERESES*/
+/* Contenedor principal con Grid */
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0px;
+  width: 100%;
+  font-size: 17px;
+  color:  #CDB4C6;
+  text-align: center;
+}
+
+/* Cada celda del Grid */
+.grid-item {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  justify-content: start; 
+  padding: 10px;
+  margin-top: 60px;
+  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.8), inset 0px 0px 20px 10px rgba(0, 0, 0, 0.8);
+  border-radius: 12px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 60px;
+  height: 275px;
+}
+
+/* Estilo para la leyenda */
+.grid-item span {
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #6B2127;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8)
+}
+
+/* Ajuste de la imagen */
+.grid-item img {
+  width: 100%;
+  max-width: 150px;
+  height: 75%;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.8)
+}
+/*INTERESES*/
+
+
+
+/* CONTACTO */
+.cajacontacto{
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  flex-grow: 1;            
+  width: 100%;
+ 
+}
+.estiloespecial4 a{
+    background-color: #1a1014; 
+    padding: 40px 0px;          
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8), inset 0px 0px 20px 10px rgba(0, 0, 0, 0.8);
+    text-align: center;
+    border-radius: 12px;
+    width: 250px;
+    margin: auto;
+    margin-top: 135px;
+    text-decoration: underline;
+    text-decoration-color: #6B2127;
+    color: #6B2127;
+}   
+/* CONTACTO */
