@@ -1,16 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primer Sitio</title>
-    <link rel="stylesheet" href="estilos/estilo1.css" </head>
-
+    <link rel="stylesheet" href="estilos/estilo1.css">
+</head>
 <body>
     <header>
-        <h1>Mi Sitio Personal - Intereses</h1>
-        <nav class="menu-principal">
+        <div class="header-top">
+            <h1>Mi Sitio Personal - Intereses</h1>
+            <button class="hamburguesa" id="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="menu-principal" id="menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="intereses.html">Intereses</a></li>
@@ -19,29 +25,43 @@
         </nav>
     </header>
     <main>
-
         <div class="grid-container">
             <div class="grid-item">
-                <span>Dibujar</span>
-                <img src="img/reze.jpeg" alt="Descripción">
+                <span>Viajar</span>
+                <img src="img/avion.jpeg" alt="Descripción">
+                <p class="texto-tarjeta">Me encanta explorar nuevos lugares o revisitarlos. Recientemente estuve recorriendo distintas ciudades de Chile y en el futuro me gustaría ir al exterior.</p>
             </div>
-                <div class="grid-item">
+            
+            <div class="grid-item">
                 <span>Música</span>
                 <img src="https://www.infobae.com/new-resizer/gnstMvEwWZ807ag6E68WbkVnBhE=/750x0/filters:quality(100)/cloudfront-us-east-1.images.arcpublishing.com/infobae/7BYAJI4OBRDORB6C7RELI5NF3Y.jpg" alt="Descripción">
+                <p class="texto-tarjeta">Disfruto mucho ir a festivales como el Lollapalooza y escuchar a mis artistas favoritos a diario, especialmente Gustavo Cerati y Deftones. </p>
             </div>
-                <div class="grid-item">
-                <span>Juegos</span>
-                <img src="https://image.api.playstation.com/vulcan/ap/rnd/202512/1205/79661d7a2bdb9784749b4e57e1456ca89f7ac7bed8615aee.png" alt="Descripción">
+            
+            <div class="grid-item">
+                <span>Programación</span>
+                <img src="img/programacion.jpg" alt="Descripción">
+                <p class="texto-tarjeta">Mi gran objetivo es convertirme en programadora Full Stack. Me entusiasma aprender constantemente nuevos lenguajes y tecnologías.</p>
             </div>
-                <div class="grid-item">
+            
+            <div class="grid-item">
                 <span>Informática</span>
                 <img src="img/collage.jpg" alt="Descripción">
+                <p class="texto-tarjeta">Toda mi vida estuve rodeada de computadoras gracias a mi papá. Hoy estudio la Licenciatura en Sistemas para convertir esto en mi profesión.</p>
+            </div>
         </div>
     </main>
     <footer>
-        <p class="estiloespecial2">Primer año - Licenciatura en Gestión de Tecnología de la Información (Sistemas) -
-            2026</p>
+        <p class="estiloespecial2">Primer año Diseño y Desarrollo Web - Licenciatura en Gestión de Tecnología de la Información (Sistemas) - 2026</p>
         <p class="estiloespecial3">Montenegro Ticiana Rocío</p>
     </footer>
+
+    <script>
+        var hamburguesa = document.getElementById('hamburguesa');
+        var menu = document.getElementById('menu');
+        hamburguesa.onclick = function() {
+            menu.classList.toggle('abierto');
+        };
+    </script>
 </body>
 </html>

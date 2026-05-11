@@ -4,12 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Primer Sitio</title>
-    <link rel="stylesheet" href="estilos/estilo1.css"
+    <link rel="stylesheet" href="estilos/estilo1.css">
 </head>
 <body>
     <header> 
-        <h1>Mi Sitio Personal - Inicio</h1>
-        <nav class="menu-principal">
+        <div class="header-top">
+            <h1>Mi Sitio Personal - Inicio</h1>
+            <button class="hamburguesa" id="hamburguesa">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        <nav class="menu-principal" id="menu">
             <ul>
                 <li><a href="index.html">Inicio</a></li>
                 <li><a href="intereses.html">Intereses</a></li>
@@ -19,13 +26,21 @@
     </header>
     <main>
         <div id="contenedorimg">
-        <img src="img/sobremi.png"Infografía Tici" id="infografia">
+        <p class="textoinfografia">Mi Infografía Personal</p>
+        <img src="img/sobremi.png" alt="Infografía Tici" id="infografia">
         </div>
-        <h2 class="estiloespecial">Mi Infografía Personal</h2>
     </main>
     <footer>
-        <p class="estiloespecial2">Primer año - Licenciatura en Gestión de Tecnología de la Información (Sistemas) - 2026</p>
+        <p class="estiloespecial2">Primer año Diseño y Desarrollo Web - Licenciatura en Gestión de Tecnología de la Información (Sistemas) - 2026</p>
         <p class="estiloespecial3">Montenegro Ticiana Rocío</p>
     </footer>
+
+    <script>
+        var hamburguesa = document.getElementById('hamburguesa');
+        var menu = document.getElementById('menu');
+        hamburguesa.onclick = function() {
+            menu.classList.toggle('abierto');
+        };
+    </script>
 </body>
 </html>

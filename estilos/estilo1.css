@@ -9,14 +9,14 @@ header{
 
 h1{
     font-size: 45px;
-    color:  #CDB4C6;
-    font-weight: 500;
+    color:  #E6D5E0;
+    font-weight: 550;
     margin-top: 0px ;
     margin-left: 0px;
     margin-bottom: auto;
     padding: 10px;
     text-align: center;
-    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.8), inset 0px 0px 20px 20px rgba(0, 0, 0, 0.8);
+    box-shadow: 0px 0px 12px 0px rgba(153, 20, 146, 0.8), inset 0px 0px 20px 20px rgba(0, 0, 0, 0.8);
 }
 
 body{
@@ -26,34 +26,34 @@ body{
     min-height: 100vh; 
     display: flex;
     flex-direction: column;
-
     margin: 0;
 }
 
 .estiloespecial{
-    color:  #6B2127;
-    font-size: 20px;
+    color: #E6D5E0;
+    font-size: 32px;
+    font-weight: 600;
     width: 100%;
     margin-left: auto;
     margin-bottom: auto;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
-    padding: 0px;
+    padding: 0;
 }
 
 .estiloespecial2{
-    color:  #CBB3C4;
+    color:  #E6D5E0;
     font-size: 16px;
-    width: 700px;
+    width: 800px;
     margin-top: 15px;
     margin-bottom: 20px;
-    margin-left: 25px;
+    margin-left: 23px;
     text-align: left;
 }
 
 .estiloespecial3{
-    color:  #92818D;
+    color:  #cdb4c6;
     font-size: 16px;
     width: 700px;
     margin-top: 20px;
@@ -62,27 +62,48 @@ body{
     text-align: left;
 }
 
+.descripcionintereses{
+    color:  #E6D5E0;
+    font-size: 20px;
+    width: 800px;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center; 
+    justify-content: start; 
+    padding: 40px;
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.8), inset 0px 0px 20px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+}
+
+
 /*INDEX*/
 #contenedorimg{
-    margin-top: 60px;
-    margin-bottom: 0px;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 20px;
     margin-right: 20px;
     background: rgba(147, 124, 142, 0.1);
     backdrop-filter: blur(5px);
-    position: relative;
     border: none;
     box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.8), inset 0px 0px 30px 20px rgba(0, 0, 0, 0.8);
-    padding: 50px 46px;
+    padding: auto;
     border-radius: 12px;
 }
-
+.textoinfografia{
+    color: #E6D5E0;
+    font-size: 32px;
+    width: 100%;
+    text-align: center;
+    padding: 25px 0px 0px 0px;
+}  
 #infografia{
-    margin: 0 0 0 10px;
+    margin: 0 0 0 55px;
+    margin-top: -10px;
     width: 1150px;
     height: auto;
     border-radius: 12px;
     box-shadow: 0px 0px 12px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 50px;
 }
 /*INDEX*/
 
@@ -93,11 +114,10 @@ footer{
     box-shadow: inset 0px 0px 30px 20px rgba(0, 0, 0, 0.8);
     padding: 10px 0px;
     box-sizing: border-box;
-    text-align: left;
 }
 
 a {
-    color: #CBB3C4;
+    color: #E6D5E0;
     text-decoration: none;
     transition: 0.3s;
 }
@@ -193,33 +213,46 @@ ul li:last-child {
   gap: 0px;
   width: 100%;
   font-size: 17px;
-  color:  #CDB4C6;
-  text-align: center;
 }
 
-/* Cada celda del Grid */
+/* Modificamos el grid-item para que acepte más contenido */
 .grid-item {
   display: flex;
   flex-direction: column; 
   align-items: center;    
   justify-content: start; 
   padding: 10px;
-  margin-top: 60px;
+  padding-bottom: 20px; /* Agregamos aire abajo */
+  margin-top: 50px;
   box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.8), inset 0px 0px 20px 10px rgba(0, 0, 0, 0.8);
   border-radius: 12px;
   margin-left: 20px;
   margin-right: 20px;
-  margin-bottom: 60px;
-  height: 275px;
+  margin-bottom: 50px;
+  height: auto; /* ESTO ES CLAVE: quitamos los 275px para que se estire */
 }
 
-/* Estilo para la leyenda */
+/* Agregá esta nueva clase al final de tu CSS */
+.texto-tarjeta {
+    color: #E6D5E0;
+    font-size: 15px;
+    text-align: center;
+    margin-top: 15px; /* Lo separa un poco de la imagen */
+    padding: 15px;
+    width: 90%;
+    /* Mismos bordes y sombras que tu cajón inferior: */
+    box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.8), inset 0px 0px 20px 10px rgba(0, 0, 0, 0.8);
+    border-radius: 12px;
+    box-sizing: border-box;
+}
+
+/* Estilo para los intereses */
 .grid-item span {
-  font-weight: bold;
+  font-weight: 500px;
   font-size: 20px;
   margin-bottom: 10px;
   text-align: center;
-  color: #6B2127;
+  color: #E6D5E0;
   text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.8)
 }
 
@@ -247,15 +280,112 @@ ul li:last-child {
 }
 .estiloespecial4 a{
     background-color: #1a1014; 
-    padding: 40px 0px;          
+    padding: 35px 35px;          
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.8), inset 0px 0px 20px 10px rgba(0, 0, 0, 0.8);
     text-align: center;
     border-radius: 12px;
     width: 250px;
-    margin: auto;
-    margin-top: 135px;
-    text-decoration: underline;
-    text-decoration-color: #6B2127;
-    color: #6B2127;
+    margin-top: 120px;
+    color: #E6D5E0;
 }   
+/* Subrayado sólo para la parte del email dentro del enlace */
+.email-subrayado{
+    display: inline-block;
+    border-bottom: 1px solid #E6D5E0;
+    padding-bottom: 2px;
+}
 /* CONTACTO */
+/* ========================================= */
+/* CSS RESPONSIVE Y MENÚ HAMBURGUESA         */
+/* ========================================= */
+
+header {
+    position: relative;
+}
+
+/* Estilos del botón hamburguesa */
+.hamburguesa {
+    display: none; 
+    position: absolute;
+    top: 22px; 
+    right: 25px;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 35px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    z-index: 100;
+}
+
+.hamburguesa span {
+    width: 100%;
+    height: 4px;
+    background-color: #E6D5E0;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+/* --- Ajustes Responsive --- */
+@media screen and (max-width: 1200px) {
+    #infografia {
+        width: 90%;
+        margin: 0 auto;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    /* Adaptar anchos fijos a porcentajes para que no desborden lateralmente */
+    .estiloespecial2, 
+    .estiloespecial3, 
+    .descripcionintereses {
+        width: 85%;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+    }
+    
+    /* Grilla de intereses pasa a 2 columnas */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Mostrar el botón hamburguesa en celulares */
+    .hamburguesa {
+        display: flex;
+    }
+
+    /* Ocultar menú por defecto en celulares */
+    .menu-principal {
+        display: none;
+        width: 100%;
+    }
+
+    /* Mostrar menú cuando se hace clic (clase agregada por JS) */
+    .menu-principal.abierto {
+        display: block;
+    }
+
+    .menu-principal ul {
+        flex-direction: column;
+    }
+
+    .menu-principal li {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 32px;
+        padding-right: 70px; /* Evita que el texto quede debajo del botón */
+    }
+
+    /* Grilla a 1 columna en celulares */
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
